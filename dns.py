@@ -13,7 +13,7 @@ RESOLVERS_IP = [
 DNS_PORT = 53
 HTTP_PORT = 80
 IP = '127.0.0.1'
-# Binary format of tmz.com
+# Byte format of tmz.com
 TMZ_DOMAIN = b'\x03\x74\x6d\x7a\x03\x63\x6f\x6d'
 
 
