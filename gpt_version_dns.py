@@ -130,10 +130,7 @@ if __name__ == "__main__":
     rtt_http = measure_rtt(start_time_http)
     print(f"RTT for HTTP Request: {rtt_http} seconds")
 
-    # Print HTTP Response
-    """ print("HTTP Response:")
-    print(http_response.decode('utf-8')) """
-
     # Step 9: Save HTML content to a file
-    save_html_content(http_response, "tmz_page.html")
+    _, _, html_content = http_response.partition(b'\r\n\r\n')
+    save_html_content(html_content, "tmz_gpt_page.html")
     print("HTML content saved to tmz_page.html")
