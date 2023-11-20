@@ -37,7 +37,7 @@ for row in csv_reader:
             break
 
         try:
-            website = "http://www." + row[1]
+            website = "http://" + row[1]
             print(f"{ind} Website is {website}")
 
             
